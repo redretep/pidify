@@ -1,6 +1,6 @@
 {
-  "name": "Monochrome Music",
-  "short_name": "Monochrome",
+  "name": "pidify music streaming",
+  "short_name": "pidify",
   "description": "A minimalist music streaming application",
   "start_url": "/",
   "display": "standalone",
