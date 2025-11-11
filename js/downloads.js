@@ -293,8 +293,8 @@ export async function downloadDiscography(artist, api, quality, lyricsManager = 
     const JSZip = await loadJSZip();
     const zip = new JSZip();
     
-    const template = localStorage.getItem('zip-folder-template') || '{albumTitle} - {albumArtist} - monochrome.tf';
-    const rootFolder = `${sanitizeForFilename(artist.name)} discography - monochrome.tf`;
+    const template = localStorage.getItem('zip-folder-template') || '{albumTitle} - {albumArtist} - downloaded on pidify';
+    const rootFolder = `${sanitizeForFilename(artist.name)} discography - downloaded on pidify`;
     
     const totalAlbums = artist.albums.length;
     const notification = createBulkDownloadNotification('discography', artist.name, totalAlbums);
